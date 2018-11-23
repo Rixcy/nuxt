@@ -1,6 +1,10 @@
 # nuxt
 
-> My extraordinary Nuxt.js project
+*A project to test integration with Wordpress REST API*
+
+<p align="center">
+  <img width="400" height="400" src="./assets/icon.png">
+</p>
 
 ## Build Setup
 
@@ -18,5 +22,3 @@ $ yarn start
 # generate static project
 $ yarn run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
