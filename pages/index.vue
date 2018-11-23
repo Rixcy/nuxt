@@ -1,20 +1,24 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <img
+        src="~static/icon.png"
+        width="200"
+        height="200"
+        alt="">
       <h1 class="title">
         nuxt
       </h1>
       <h2 class="subtitle">
-        My extraordinary Nuxt.js project
+        Just a lil' test
       </h2>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://github.com/Rixcy/nuxt/#readme"
           target="_blank"
           class="button--green">Documentation</a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/Rixcy"
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
@@ -23,17 +27,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
 }
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;

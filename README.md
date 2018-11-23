@@ -3,7 +3,7 @@
 *A project to test integration with Wordpress REST API*
 
 <p align="center">
-  <img width="400" height="400" src="./assets/icon.png">
+  <img width="400" height="400" src="./static/icon.png">
 </p>
 
 ## Build Setup
