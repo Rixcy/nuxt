@@ -21,4 +21,8 @@ $ yarn start
 
 # generate static project
 $ yarn run generate
+
+# create a https location (https://ngrok.com/docs)
+# requires ngrok downloaded and in ~/ root directory
+$ yarn run https
 ```

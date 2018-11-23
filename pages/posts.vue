@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="posts">
     <img
       src="~static/icon.png"
       width="200"
@@ -45,5 +45,16 @@
 
 .links {
   padding-top: 15px;
+}
+
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.nuxt-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
