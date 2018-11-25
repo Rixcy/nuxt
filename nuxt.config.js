@@ -27,7 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'assets/css/font-awesome.min.css'
+    'assets/css/font-awesome.min.css',
+    'assets/css/main.scss'
   ],
 
   /*

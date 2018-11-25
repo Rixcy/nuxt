@@ -4,9 +4,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style>
 html {
   font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI',

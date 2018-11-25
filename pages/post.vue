@@ -62,7 +62,3 @@
     </footer>
   </div>
 </template>
-
-<style lang="scss">
-  @import "@/assets/posts/scss/main.scss";
-</style>
