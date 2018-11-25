@@ -4,16 +4,18 @@
       <header class="major">
         <h2>{{ post.title.rendered }}</h2>
       </header>
-      <div v-html="post.content.rendered" />
-      <ul class="actions">
-        <li><a
-          href="generic.html"
-          class="button">Learn More</a></li>
-      </ul>
+      <div>{{ post.date | moment('dddd, MMMM Do YYYY') }}</div>
     </div>
-    <span class="image"><img
-      src="images/pic01.jpg"
-      alt="" ></span>
+    <span class="image">
+      <img
+        v-if="post._embedded['wp:featuredmedia']"
+        :src="post._embedded['wp:featuredmedia'][0].source_url"
+        alt="" >
+      <img
+        v-else
+        src="images/pic01.jpg"
+        alt="" >
+    </span>
   </div>
 </template>
 
