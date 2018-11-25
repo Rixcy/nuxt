@@ -8,6 +8,8 @@
 
 ## Build Setup
 
+Set `WORDPRESS` to the location of your Wordpress server in the `.env` file
+
 ``` bash
 # install dependencies
 $ yarn install
