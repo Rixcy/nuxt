@@ -3,12 +3,10 @@
 *A project to test integration with Wordpress REST API*
 
 <p align="center">
-  <img width="400" height="400" src="./static/icon.png">
+  <img width="200" height="200" src="./static/icon.png">
 </p>
 
 ## Build Setup
-
-Set `WORDPRESS` to the location of your Wordpress server in the `.env` file
 
 ``` bash
 # install dependencies
@@ -28,3 +26,9 @@ $ yarn run generate
 # requires ngrok downloaded and in ~/ root directory
 $ yarn run https
 ```
+
+## Requirements
+
+> [Advanced Custom Fields WordPress Plugin](https://wordpress.org/plugins/advanced-custom-fields/)
+
+> Set `WORDPRESS` to the location of your Wordpress server in the `.env` file

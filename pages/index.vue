@@ -6,9 +6,8 @@
       <span class="logo"><img
         src="images/logo.svg"
         alt="" ></span>
-      <h1>Stellar</h1>
-      <p>Just another free, fully responsive site template<br >
-        built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+      <h1>{{ index.name }}</h1>
+      <p>{{ index.description }}</p>
     </header>
 
     <nav id="nav">
@@ -131,15 +130,15 @@ import wp from '@/middleware/wp'
 
 export default {
   async asyncData ({ params }) {
-    return wp.posts()
+    let posts = await wp.posts()
+    let index = await wp.index()
+    return {
+      posts: posts.posts,
+      index: index.index
+    }
   },
   components: {
     Post
-  },
-  data: function () {
-    return {
-      posts: {}
-    }
   }
 }
 </script>

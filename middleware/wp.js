@@ -1,4 +1,5 @@
 import axios from 'axios'
+import Config from '@/middleware/wp_config'
 
 class WpApi {
   constructor (siteurl) {
@@ -6,14 +7,29 @@ class WpApi {
   }
 
   async posts () {
-    // add &_embed to the route to get nested routes (i.e. featured image)
-    return axios.get(`${this.apiBase}/wp/v2/posts?_embed`, {
+    return axios.get(`${this.apiBase}${Config.api.posts}`, {
       params: {
         page: 1,
         per_page: 5
       }
     }).then(json => {
       return { posts: json.data }
+    }).catch(e => {
+      return { error: e }
+    })
+  }
+
+  async index () {
+    return axios.get(`${this.apiBase}${Config.api.index}`).then(json => {
+      return { index: json.data }
+    }).catch(e => {
+      return { error: e }
+    })
+  }
+
+  async categories () {
+    return axios.get(`${this.apiBase}${Config.api.categories}`).then(json => {
+      return { categories: json.data }
     }).catch(e => {
       return { error: e }
     })
