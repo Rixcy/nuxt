@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Nav />
+    <!-- <Nav /> -->
     <nuxt/>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -37,11 +37,8 @@ html {
 
 #app {
   min-height: 100vh;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 .button--green {

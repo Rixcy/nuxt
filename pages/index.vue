@@ -25,8 +25,13 @@
 </template>
 
 <style lang="scss">
+.index {
+  text-align: center;
+  color: #2c3e50;
+}
+
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
