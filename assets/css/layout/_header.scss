@@ -7,7 +7,7 @@
 /* Header */
 
 	#header {
-		@include padding(5em, 5em, (0, 0, -2em, 0));
+		padding: 2em;
 		text-align: center;
 
 		h1 {
@@ -20,8 +20,6 @@
 		}
 
 		&.alt {
-			@include padding(6em, 5em, (1em, 0, 0, 0));
-
 			h1 {
 				font-size: 3.25em;
 			}
@@ -49,25 +47,7 @@
 			}
 		}
 
-		@include breakpoint('<=large') {
-			@include padding(4em, 4em, (0, 0, -2em, 0));
-
-			&.alt {
-				@include padding(5em, 4em, (1em, 0, 0, 0));
-			}
-		}
-
-		@include breakpoint('<=medium') {
-			@include padding(4em, 3em, (0, 0, -2em, 0));
-
-			&.alt {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
-			}
-		}
-
 		@include breakpoint('<=small') {
-			@include padding(3em, 2em, (0, 0, -1em, 0));
-
 			p {
 				font-size: 1em;
 				letter-spacing: 0;
@@ -78,27 +58,9 @@
 			}
 
 			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
-
 				h1 {
 					font-size: 2.5em;
 				}
-			}
-		}
-
-		@include breakpoint('<=xsmall') {
-			@include padding(3em, 1.5em, (0, 0, -1em, 0));
-
-			&.alt {
-				@include padding(3em, 1.5em, (1em, 0, 0, 0));
-			}
-		}
-
-		@include breakpoint('<=xxsmall') {
-			@include padding(2.5em, 1em, (0, 0, -1em, 0));
-
-			&.alt {
-				@include padding(2.5em, 1em, (1em, 0, 0, 0));
 			}
 		}
 
